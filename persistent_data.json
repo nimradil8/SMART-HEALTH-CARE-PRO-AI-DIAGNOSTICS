@@ -1,0 +1,1331 @@
+{
+  "total_scans": 90,
+  "high_risk_count": 23,
+  "high_risk_details": [
+    {
+      "name": "butterly glioma.jpg",
+      "label": "High Risk",
+      "conf": "100.00",
+      "sev": 2,
+      "time": "2026-04-27 00:34:39"
+    },
+    {
+      "name": "butterly glioma.jpg",
+      "label": "High Risk",
+      "conf": "100.00",
+      "sev": 2,
+      "time": "2026-04-27 08:50:21"
+    },
+    {
+      "name": "butterly glioma.jpg",
+      "label": "High Risk",
+      "conf": "100.00",
+      "sev": 2,
+      "time": "2026-04-27 08:50:41"
+    },
+    {
+      "name": "butterly glioma.jpg",
+      "label": "High Risk",
+      "conf": "100.00",
+      "sev": 2,
+      "time": "2026-04-27 08:51:09"
+    },
+    {
+      "name": "butterly glioma.jpg",
+      "label": "High Risk",
+      "conf": "100.00",
+      "sev": 2,
+      "time": "2026-04-27 10:41:37"
+    },
+    {
+      "name": "butterly glioma.jpg",
+      "label": "High Risk",
+      "conf": "100.00",
+      "sev": 2,
+      "time": "2026-04-27 22:45:02"
+    },
+    {
+      "name": "Y108.jpg",
+      "label": "High Risk",
+      "conf": "100.00",
+      "sev": 2,
+      "time": "2026-04-27 23:15:50"
+    },
+    {
+      "name": "37 no.jpg",
+      "label": "High Risk",
+      "conf": "100.00",
+      "sev": 2,
+      "time": "2026-04-27 23:19:29"
+    },
+    {
+      "name": "37 no.jpg",
+      "label": "High Risk",
+      "conf": "100.00",
+      "sev": 2,
+      "time": "2026-04-27 23:19:48"
+    },
+    {
+      "name": "37 no.jpg",
+      "label": "High Risk",
+      "conf": "100.00",
+      "sev": 2,
+      "time": "2026-04-27 23:20:08"
+    },
+    {
+      "name": "33 no.jpg",
+      "label": "High Risk",
+      "conf": "100.00",
+      "sev": 2,
+      "time": "2026-04-27 23:20:54"
+    },
+    {
+      "name": "22 no.jpg",
+      "label": "High Risk",
+      "conf": "100.00",
+      "sev": 2,
+      "time": "2026-04-27 23:23:55"
+    },
+    {
+      "name": "15 no.jpg",
+      "label": "High Risk",
+      "conf": "100.00",
+      "sev": 2,
+      "time": "2026-04-27 23:24:44"
+    },
+    {
+      "name": "Y108.jpg",
+      "label": "High Risk",
+      "conf": "100.00",
+      "sev": 2,
+      "time": "2026-04-28 09:21:46"
+    },
+    {
+      "name": "Y104.jpg",
+      "label": "High Risk",
+      "conf": "100.00",
+      "sev": 2,
+      "time": "2026-04-28 22:23:20"
+    },
+    {
+      "name": "Y104.jpg",
+      "label": "High Risk",
+      "conf": "100.00",
+      "sev": 2,
+      "time": "2026-04-28 22:24:04"
+    },
+    {
+      "name": "Y104.jpg",
+      "label": "High Risk",
+      "conf": "100.00",
+      "sev": 2,
+      "time": "2026-04-28 22:24:44"
+    },
+    {
+      "name": "Y106.jpg",
+      "label": "High Risk",
+      "conf": "100.00",
+      "sev": 2,
+      "time": "2026-04-28 22:48:26"
+    },
+    {
+      "name": "Y106.jpg",
+      "label": "High Risk",
+      "conf": "100.00",
+      "sev": 2,
+      "time": "2026-04-28 22:48:59"
+    },
+    {
+      "name": "Y106.jpg",
+      "label": "High Risk",
+      "conf": "100.00",
+      "sev": 2,
+      "time": "2026-04-28 22:49:20"
+    },
+    {
+      "name": "Y108.jpg",
+      "label": "High Risk",
+      "conf": "100.00",
+      "sev": 2,
+      "time": "2026-04-29 11:18:26"
+    },
+    {
+      "name": "Y108.jpg",
+      "label": "High Risk",
+      "conf": "100.00",
+      "sev": 2,
+      "time": "2026-04-29 11:18:48"
+    },
+    {
+      "name": "Y108.jpg",
+      "label": "High Risk",
+      "conf": "100.00",
+      "sev": 2,
+      "time": "2026-04-29 11:19:48"
+    }
+  ],
+  "scan_history": [
+    {
+      "id": 90,
+      "name": "Gemini_Generated_Image_tiw199tiw199tiw1.png",
+      "label": "Normal",
+      "conf": 100.0,
+      "sev": 0,
+      "time": "2026-04-30 17:30:10",
+      "filename": "Gemini_Generated_Image_tiw199tiw199tiw1.png"
+    },
+    {
+      "id": 89,
+      "name": "Gemini_Generated_Image_tiw199tiw199tiw1.png",
+      "label": "Normal",
+      "conf": 100.0,
+      "sev": 0,
+      "time": "2026-04-30 17:29:42",
+      "filename": "Gemini_Generated_Image_tiw199tiw199tiw1.png"
+    },
+    {
+      "id": 88,
+      "name": "Gemini_Generated_Image_tiw199tiw199tiw1.png",
+      "label": "Normal",
+      "conf": 100.0,
+      "sev": 0,
+      "time": "2026-04-30 17:28:49",
+      "filename": "Gemini_Generated_Image_tiw199tiw199tiw1.png"
+    },
+    {
+      "id": 87,
+      "name": "WhatsApp Image 2026-04-26 at 11.15.41 AM.jpeg",
+      "label": "Normal",
+      "conf": 100.0,
+      "sev": 0,
+      "time": "2026-04-30 17:28:20",
+      "filename": "WhatsApp Image 2026-04-26 at 11.15.41 AM.jpeg"
+    },
+    {
+      "id": 86,
+      "name": "WhatsApp Image 2026-04-26 at 11.15.41 AM.jpeg",
+      "label": "Normal",
+      "conf": 100.0,
+      "sev": 0,
+      "time": "2026-04-30 17:28:03",
+      "filename": "WhatsApp Image 2026-04-26 at 11.15.41 AM.jpeg"
+    },
+    {
+      "id": 85,
+      "name": "Y108.jpg",
+      "label": "High Risk",
+      "conf": 100.0,
+      "sev": 2,
+      "time": "2026-04-29 11:19:48",
+      "filename": "Y108.jpg"
+    },
+    {
+      "id": 84,
+      "name": "Y108.jpg",
+      "label": "High Risk",
+      "conf": 100.0,
+      "sev": 2,
+      "time": "2026-04-29 11:18:48",
+      "filename": "Y108.jpg"
+    },
+    {
+      "id": 83,
+      "name": "Y108.jpg",
+      "label": "High Risk",
+      "conf": 100.0,
+      "sev": 2,
+      "time": "2026-04-29 11:18:26",
+      "filename": "Y108.jpg"
+    },
+    {
+      "id": 82,
+      "name": "person100_bacteria_475.jpeg",
+      "label": "Medium Risk",
+      "conf": 100.0,
+      "sev": 1,
+      "time": "2026-04-28 22:50:38",
+      "filename": "person100_bacteria_475.jpeg"
+    },
+    {
+      "id": 81,
+      "name": "person109_bacteria_517.jpeg",
+      "label": "Medium Risk",
+      "conf": 100.0,
+      "sev": 1,
+      "time": "2026-04-28 22:50:38",
+      "filename": "person109_bacteria_517.jpeg"
+    },
+    {
+      "id": 80,
+      "name": "person104_bacteria_492.jpeg",
+      "label": "Medium Risk",
+      "conf": 100.0,
+      "sev": 1,
+      "time": "2026-04-28 22:50:38",
+      "filename": "person104_bacteria_492.jpeg"
+    },
+    {
+      "id": 79,
+      "name": "person109_bacteria_526.jpeg",
+      "label": "Medium Risk",
+      "conf": 100.0,
+      "sev": 1,
+      "time": "2026-04-28 22:50:38",
+      "filename": "person109_bacteria_526.jpeg"
+    },
+    {
+      "id": 78,
+      "name": "person100_bacteria_475.jpeg",
+      "label": "Medium Risk",
+      "conf": 100.0,
+      "sev": 1,
+      "time": "2026-04-28 22:50:02",
+      "filename": "person100_bacteria_475.jpeg"
+    },
+    {
+      "id": 77,
+      "name": "person109_bacteria_517.jpeg",
+      "label": "Medium Risk",
+      "conf": 100.0,
+      "sev": 1,
+      "time": "2026-04-28 22:50:02",
+      "filename": "person109_bacteria_517.jpeg"
+    },
+    {
+      "id": 76,
+      "name": "person104_bacteria_492.jpeg",
+      "label": "Medium Risk",
+      "conf": 100.0,
+      "sev": 1,
+      "time": "2026-04-28 22:50:02",
+      "filename": "person104_bacteria_492.jpeg"
+    },
+    {
+      "id": 75,
+      "name": "person109_bacteria_526.jpeg",
+      "label": "Medium Risk",
+      "conf": 100.0,
+      "sev": 1,
+      "time": "2026-04-28 22:50:02",
+      "filename": "person109_bacteria_526.jpeg"
+    },
+    {
+      "id": 74,
+      "name": "Y106.jpg",
+      "label": "High Risk",
+      "conf": 100.0,
+      "sev": 2,
+      "time": "2026-04-28 22:49:20",
+      "filename": "Y106.jpg"
+    },
+    {
+      "id": 73,
+      "name": "Y106.jpg",
+      "label": "High Risk",
+      "conf": 100.0,
+      "sev": 2,
+      "time": "2026-04-28 22:48:59",
+      "filename": "Y106.jpg"
+    },
+    {
+      "id": 72,
+      "name": "Y106.jpg",
+      "label": "High Risk",
+      "conf": 100.0,
+      "sev": 2,
+      "time": "2026-04-28 22:48:26",
+      "filename": "Y106.jpg"
+    },
+    {
+      "id": 71,
+      "name": "41598_2023_41576_Fig1_HTML.jpg",
+      "label": "High Risk",
+      "conf": 100.0,
+      "sev": 2,
+      "time": "2026-04-28 22:25:46",
+      "filename": "41598_2023_41576_Fig1_HTML.jpg"
+    },
+    {
+      "id": 70,
+      "name": "images (1).jpg",
+      "label": "Normal",
+      "conf": 99.89,
+      "sev": 0,
+      "time": "2026-04-28 22:25:46",
+      "filename": "images (1).jpg"
+    },
+    {
+      "id": 69,
+      "name": "butterly glioma.jpg",
+      "label": "High Risk",
+      "conf": 100.0,
+      "sev": 2,
+      "time": "2026-04-28 22:25:46",
+      "filename": "butterly glioma.jpg"
+    },
+    {
+      "id": 68,
+      "name": "Y104.jpg",
+      "label": "High Risk",
+      "conf": 100.0,
+      "sev": 2,
+      "time": "2026-04-28 22:24:44",
+      "filename": "Y104.jpg"
+    },
+    {
+      "id": 67,
+      "name": "Y104.jpg",
+      "label": "High Risk",
+      "conf": 100.0,
+      "sev": 2,
+      "time": "2026-04-28 22:24:04",
+      "filename": "Y104.jpg"
+    },
+    {
+      "id": 66,
+      "name": "Y104.jpg",
+      "label": "High Risk",
+      "conf": 100.0,
+      "sev": 2,
+      "time": "2026-04-28 22:23:20",
+      "filename": "Y104.jpg"
+    },
+    {
+      "id": 65,
+      "name": "Y108.jpg",
+      "label": "High Risk",
+      "conf": 100.0,
+      "sev": 2,
+      "time": "2026-04-28 09:21:46",
+      "filename": "Y108.jpg"
+    },
+    {
+      "id": 64,
+      "name": "15 no.jpg",
+      "label": "High Risk",
+      "conf": 100.0,
+      "sev": 2,
+      "time": "2026-04-27 23:24:44",
+      "filename": "15 no.jpg"
+    },
+    {
+      "id": 63,
+      "name": "22 no.jpg",
+      "label": "High Risk",
+      "conf": 100.0,
+      "sev": 2,
+      "time": "2026-04-27 23:23:55",
+      "filename": "22 no.jpg"
+    },
+    {
+      "id": 62,
+      "name": "ISIC_0024332.jpg",
+      "label": "Medium Risk",
+      "conf": 100.0,
+      "sev": 1,
+      "time": "2026-04-27 23:23:49",
+      "filename": "ISIC_0024332.jpg"
+    },
+    {
+      "id": 61,
+      "name": "ISIC_0024332.jpg",
+      "label": "Medium Risk",
+      "conf": 100.0,
+      "sev": 1,
+      "time": "2026-04-27 23:23:14",
+      "filename": "ISIC_0024332.jpg"
+    },
+    {
+      "id": 60,
+      "name": "33 no.jpg",
+      "label": "High Risk",
+      "conf": 100.0,
+      "sev": 2,
+      "time": "2026-04-27 23:20:54",
+      "filename": "33 no.jpg"
+    },
+    {
+      "id": 59,
+      "name": "37 no.jpg",
+      "label": "High Risk",
+      "conf": 100.0,
+      "sev": 2,
+      "time": "2026-04-27 23:20:08",
+      "filename": "37 no.jpg"
+    },
+    {
+      "id": 58,
+      "name": "37 no.jpg",
+      "label": "High Risk",
+      "conf": 100.0,
+      "sev": 2,
+      "time": "2026-04-27 23:19:48",
+      "filename": "37 no.jpg"
+    },
+    {
+      "id": 57,
+      "name": "37 no.jpg",
+      "label": "High Risk",
+      "conf": 100.0,
+      "sev": 2,
+      "time": "2026-04-27 23:19:29",
+      "filename": "37 no.jpg"
+    },
+    {
+      "id": 56,
+      "name": "butterly glioma.jpg",
+      "label": "High Risk",
+      "conf": 100.0,
+      "sev": 2,
+      "time": "2026-04-27 23:17:44",
+      "filename": "butterly glioma.jpg"
+    },
+    {
+      "id": 55,
+      "name": "Y108.jpg",
+      "label": "High Risk",
+      "conf": 100.0,
+      "sev": 2,
+      "time": "2026-04-27 23:17:44",
+      "filename": "Y108.jpg"
+    },
+    {
+      "id": 54,
+      "name": "butterly glioma.jpg",
+      "label": "High Risk",
+      "conf": 100.0,
+      "sev": 2,
+      "time": "2026-04-27 23:17:24",
+      "filename": "butterly glioma.jpg"
+    },
+    {
+      "id": 53,
+      "name": "Y108.jpg",
+      "label": "High Risk",
+      "conf": 100.0,
+      "sev": 2,
+      "time": "2026-04-27 23:17:24",
+      "filename": "Y108.jpg"
+    },
+    {
+      "id": 52,
+      "name": "butterly glioma.jpg",
+      "label": "High Risk",
+      "conf": 100.0,
+      "sev": 2,
+      "time": "2026-04-27 23:16:48",
+      "filename": "butterly glioma.jpg"
+    },
+    {
+      "id": 51,
+      "name": "Y108.jpg",
+      "label": "High Risk",
+      "conf": 100.0,
+      "sev": 2,
+      "time": "2026-04-27 23:16:48",
+      "filename": "Y108.jpg"
+    },
+    {
+      "id": 50,
+      "name": "Y108.jpg",
+      "label": "High Risk",
+      "conf": 100.0,
+      "sev": 2,
+      "time": "2026-04-27 23:15:50",
+      "filename": "Y108.jpg"
+    },
+    {
+      "id": 49,
+      "name": "person100_bacteria_475.jpeg",
+      "label": "Medium Risk",
+      "conf": 100.0,
+      "sev": 1,
+      "time": "2026-04-27 23:08:15",
+      "filename": "person100_bacteria_475.jpeg"
+    },
+    {
+      "id": 48,
+      "name": "images (5).jpg",
+      "label": "Normal",
+      "conf": 100.0,
+      "sev": 0,
+      "time": "2026-04-27 23:02:47",
+      "filename": "images (5).jpg"
+    },
+    {
+      "id": 47,
+      "name": "images (5).jpg",
+      "label": "Normal",
+      "conf": 100.0,
+      "sev": 0,
+      "time": "2026-04-27 23:02:28",
+      "filename": "images (5).jpg"
+    },
+    {
+      "id": 46,
+      "name": "images (5).jpg",
+      "label": "Normal",
+      "conf": 100.0,
+      "sev": 0,
+      "time": "2026-04-27 23:02:11",
+      "filename": "images (5).jpg"
+    },
+    {
+      "id": 45,
+      "name": "images (4).jpg",
+      "label": "Normal",
+      "conf": 100.0,
+      "sev": 0,
+      "time": "2026-04-27 23:00:24",
+      "filename": "images (4).jpg"
+    },
+    {
+      "id": 44,
+      "name": "unnamed.jpg",
+      "label": "Medium Risk",
+      "conf": 60.14,
+      "sev": 1,
+      "time": "2026-04-27 23:00:08",
+      "filename": "unnamed.jpg"
+    },
+    {
+      "id": 43,
+      "name": "unnamed.jpg",
+      "label": "Medium Risk",
+      "conf": 60.14,
+      "sev": 1,
+      "time": "2026-04-27 23:00:02",
+      "filename": "unnamed.jpg"
+    },
+    {
+      "id": 42,
+      "name": "unnamed.jpg",
+      "label": "Medium Risk",
+      "conf": 60.14,
+      "sev": 1,
+      "time": "2026-04-27 22:59:56",
+      "filename": "unnamed.jpg"
+    },
+    {
+      "id": 41,
+      "name": "unnamed.jpg",
+      "label": "Medium Risk",
+      "conf": 60.14,
+      "sev": 1,
+      "time": "2026-04-27 22:59:27",
+      "filename": "unnamed.jpg"
+    },
+    {
+      "id": 40,
+      "name": "unnamed.jpg",
+      "label": "Medium Risk",
+      "conf": 60.14,
+      "sev": 1,
+      "time": "2026-04-27 22:59:16",
+      "filename": "unnamed.jpg"
+    },
+    {
+      "id": 39,
+      "name": "unnamed.jpg",
+      "label": "Medium Risk",
+      "conf": 60.14,
+      "sev": 1,
+      "time": "2026-04-27 22:59:03",
+      "filename": "unnamed.jpg"
+    },
+    {
+      "id": 38,
+      "name": "1-s2.0-S0263931909001811-gr2.jpg",
+      "label": "Medium Risk",
+      "conf": 74.69,
+      "sev": 1,
+      "time": "2026-04-27 22:57:39",
+      "filename": "1-s2.0-S0263931909001811-gr2.jpg"
+    },
+    {
+      "id": 37,
+      "name": "images4.jpg",
+      "label": "Normal",
+      "conf": 97.23,
+      "sev": 0,
+      "time": "2026-04-27 22:54:50",
+      "filename": "images4.jpg"
+    },
+    {
+      "id": 36,
+      "name": "butterly glioma.jpg",
+      "label": "High Risk",
+      "conf": 100.0,
+      "sev": 2,
+      "time": "2026-04-27 22:54:50",
+      "filename": "butterly glioma.jpg"
+    },
+    {
+      "id": 35,
+      "name": "Chest.png",
+      "label": "Normal",
+      "conf": 60.15,
+      "sev": 0,
+      "time": "2026-04-27 22:54:50",
+      "filename": "Chest.png"
+    },
+    {
+      "id": 34,
+      "name": "images4.jpg",
+      "label": "Normal",
+      "conf": 97.23,
+      "sev": 0,
+      "time": "2026-04-27 22:54:17",
+      "filename": "images4.jpg"
+    },
+    {
+      "id": 33,
+      "name": "butterly glioma.jpg",
+      "label": "High Risk",
+      "conf": 100.0,
+      "sev": 2,
+      "time": "2026-04-27 22:54:17",
+      "filename": "butterly glioma.jpg"
+    },
+    {
+      "id": 32,
+      "name": "Chest.png",
+      "label": "Normal",
+      "conf": 60.15,
+      "sev": 0,
+      "time": "2026-04-27 22:54:17",
+      "filename": "Chest.png"
+    },
+    {
+      "id": 31,
+      "name": "images4.jpg",
+      "label": "Normal",
+      "conf": 97.23,
+      "sev": 0,
+      "time": "2026-04-27 22:53:46",
+      "filename": "images4.jpg"
+    },
+    {
+      "id": 30,
+      "name": "butterly glioma.jpg",
+      "label": "High Risk",
+      "conf": 100.0,
+      "sev": 2,
+      "time": "2026-04-27 22:53:46",
+      "filename": "butterly glioma.jpg"
+    },
+    {
+      "id": 29,
+      "name": "Chest.png",
+      "label": "Normal",
+      "conf": 60.15,
+      "sev": 0,
+      "time": "2026-04-27 22:53:46",
+      "filename": "Chest.png"
+    },
+    {
+      "id": 28,
+      "name": "butterly glioma.jpg",
+      "label": "High Risk",
+      "conf": 100.0,
+      "sev": 2,
+      "time": "2026-04-27 22:45:02",
+      "filename": "butterly glioma.jpg"
+    },
+    {
+      "id": 27,
+      "name": "41598_2023_41576_Fig1_HTML.jpg",
+      "label": "High Risk",
+      "conf": 100.0,
+      "sev": 2,
+      "time": "2026-04-27 22:37:45",
+      "filename": "41598_2023_41576_Fig1_HTML.jpg"
+    },
+    {
+      "id": 26,
+      "name": "images (1).jpg",
+      "label": "Normal",
+      "conf": 99.89,
+      "sev": 0,
+      "time": "2026-04-27 22:37:45",
+      "filename": "images (1).jpg"
+    },
+    {
+      "id": 25,
+      "name": "images4.jpg",
+      "label": "Normal",
+      "conf": 97.23,
+      "sev": 0,
+      "time": "2026-04-27 22:37:45",
+      "filename": "images4.jpg"
+    },
+    {
+      "id": 24,
+      "name": "butterly glioma.jpg",
+      "label": "High Risk",
+      "conf": 100.0,
+      "sev": 2,
+      "time": "2026-04-27 22:37:45",
+      "filename": "butterly glioma.jpg"
+    },
+    {
+      "id": 23,
+      "name": "Chest.png",
+      "label": "Normal",
+      "conf": 98.46,
+      "sev": 0,
+      "time": "2026-04-27 22:31:53",
+      "filename": "Chest.png"
+    },
+    {
+      "id": 22,
+      "name": "Chest.png",
+      "label": "Normal",
+      "conf": 60.15,
+      "sev": 0,
+      "time": "2026-04-27 22:28:14",
+      "filename": "Chest.png"
+    },
+    {
+      "id": 21,
+      "name": "Chest.png",
+      "label": "Normal",
+      "conf": 60.15,
+      "sev": 0,
+      "time": "2026-04-27 22:24:14",
+      "filename": "Chest.png"
+    },
+    {
+      "id": 20,
+      "name": "butterly glioma.jpg",
+      "label": "High Risk",
+      "conf": 100.0,
+      "sev": 2,
+      "time": "2026-04-27 10:41:37",
+      "filename": "butterly glioma.jpg"
+    },
+    {
+      "id": 19,
+      "name": "images4.jpg",
+      "label": "Normal",
+      "conf": 97.23,
+      "sev": 0,
+      "time": "2026-04-27 10:35:42",
+      "filename": "images4.jpg"
+    },
+    {
+      "id": 18,
+      "name": "butterly glioma.jpg",
+      "label": "High Risk",
+      "conf": 100.0,
+      "sev": 2,
+      "time": "2026-04-27 10:35:42",
+      "filename": "butterly glioma.jpg"
+    },
+    {
+      "id": 17,
+      "name": "Chest.png",
+      "label": "Normal",
+      "conf": 60.15,
+      "sev": 0,
+      "time": "2026-04-27 10:35:42",
+      "filename": "Chest.png"
+    },
+    {
+      "id": 16,
+      "name": "images (3).jpg",
+      "label": "Normal",
+      "conf": 100.0,
+      "sev": 0,
+      "time": "2026-04-27 10:35:42",
+      "filename": "images (3).jpg"
+    },
+    {
+      "id": 15,
+      "name": "Chest.png",
+      "label": "Normal",
+      "conf": 60.15,
+      "sev": 0,
+      "time": "2026-04-27 10:27:12",
+      "filename": "Chest.png"
+    },
+    {
+      "id": 14,
+      "name": "Chest.png",
+      "label": "Normal",
+      "conf": 60.15,
+      "sev": 0,
+      "time": "2026-04-27 10:26:41",
+      "filename": "Chest.png"
+    },
+    {
+      "id": 13,
+      "name": "Chest.png",
+      "label": "Normal",
+      "conf": 60.15,
+      "sev": 0,
+      "time": "2026-04-27 10:26:04",
+      "filename": "Chest.png"
+    },
+    {
+      "id": 12,
+      "name": "butterly glioma.jpg",
+      "label": "High Risk",
+      "conf": 100.0,
+      "sev": 2,
+      "time": "2026-04-27 08:51:09",
+      "filename": "butterly glioma.jpg"
+    },
+    {
+      "id": 11,
+      "name": "butterly glioma.jpg",
+      "label": "High Risk",
+      "conf": 100.0,
+      "sev": 2,
+      "time": "2026-04-27 08:50:41",
+      "filename": "butterly glioma.jpg"
+    },
+    {
+      "id": 10,
+      "name": "butterly glioma.jpg",
+      "label": "High Risk",
+      "conf": 100.0,
+      "sev": 2,
+      "time": "2026-04-27 08:50:21",
+      "filename": "butterly glioma.jpg"
+    },
+    {
+      "id": 9,
+      "name": "images (2).jpg",
+      "label": "Medium Risk",
+      "conf": 53.43,
+      "sev": 1,
+      "time": "2026-04-27 00:38:10",
+      "filename": "images (2).jpg"
+    },
+    {
+      "id": 8,
+      "name": "images (2).jpg",
+      "label": "Medium Risk",
+      "conf": 53.43,
+      "sev": 1,
+      "time": "2026-04-27 00:37:52",
+      "filename": "images (2).jpg"
+    },
+    {
+      "id": 7,
+      "name": "images (2).jpg",
+      "label": "Medium Risk",
+      "conf": 88.0,
+      "sev": 1,
+      "time": "2026-04-27 00:36:38",
+      "filename": "images (2).jpg"
+    },
+    {
+      "id": 6,
+      "name": "images (2).jpg",
+      "label": "Medium Risk",
+      "conf": 53.43,
+      "sev": 1,
+      "time": "2026-04-27 00:36:23",
+      "filename": "images (2).jpg"
+    },
+    {
+      "id": 5,
+      "name": "images4.jpg",
+      "label": "Normal",
+      "conf": 97.23,
+      "sev": 0,
+      "time": "2026-04-27 00:35:06",
+      "filename": "images4.jpg"
+    },
+    {
+      "id": 4,
+      "name": "butterly glioma.jpg",
+      "label": "High Risk",
+      "conf": 100.0,
+      "sev": 2,
+      "time": "2026-04-27 00:35:06",
+      "filename": "butterly glioma.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Chest.png",
+      "label": "Normal",
+      "conf": 60.15,
+      "sev": 0,
+      "time": "2026-04-27 00:35:06",
+      "filename": "Chest.png"
+    },
+    {
+      "id": 2,
+      "name": "images (3).jpg",
+      "label": "Normal",
+      "conf": 100.0,
+      "sev": 0,
+      "time": "2026-04-27 00:35:06",
+      "filename": "images (3).jpg"
+    },
+    {
+      "id": 1,
+      "name": "butterly glioma.jpg",
+      "label": "High Risk",
+      "conf": 100.0,
+      "sev": 2,
+      "time": "2026-04-27 00:34:39",
+      "filename": "butterly glioma.jpg"
+    }
+  ],
+  "global_emergency_queue": [
+    {
+      "name": "butterly glioma.jpg",
+      "label": "High Risk",
+      "conf": 100.0,
+      "sev": 2,
+      "time": "22:37:40"
+    },
+    {
+      "name": "41598_2023_41576_Fig1_HTML.jpg",
+      "label": "High Risk",
+      "conf": 100.0,
+      "sev": 2,
+      "time": "22:37:45"
+    },
+    {
+      "name": "butterly glioma.jpg",
+      "label": "High Risk",
+      "conf": "100.00",
+      "sev": 2,
+      "time": "2026-04-27 22:45:02"
+    },
+    {
+      "name": "butterly glioma.jpg",
+      "label": "High Risk",
+      "conf": 100.0,
+      "sev": 2,
+      "time": "22:53:44"
+    },
+    {
+      "name": "butterly glioma.jpg",
+      "label": "High Risk",
+      "conf": 100.0,
+      "sev": 2,
+      "time": "22:54:15"
+    },
+    {
+      "name": "butterly glioma.jpg",
+      "label": "High Risk",
+      "conf": 100.0,
+      "sev": 2,
+      "time": "22:54:50"
+    },
+    {
+      "name": "1-s2.0-S0263931909001811-gr2.jpg",
+      "label": "Medium Risk",
+      "conf": "74.69",
+      "sev": 1,
+      "time": "2026-04-27 22:57:39"
+    },
+    {
+      "name": "unnamed.jpg",
+      "label": "Medium Risk",
+      "conf": "60.14",
+      "sev": 1,
+      "time": "2026-04-27 22:59:03"
+    },
+    {
+      "name": "unnamed.jpg",
+      "label": "Medium Risk",
+      "conf": "60.14",
+      "sev": 1,
+      "time": "2026-04-27 22:59:16"
+    },
+    {
+      "name": "unnamed.jpg",
+      "label": "Medium Risk",
+      "conf": "60.14",
+      "sev": 1,
+      "time": "2026-04-27 22:59:27"
+    },
+    {
+      "name": "unnamed.jpg",
+      "label": "Medium Risk",
+      "conf": "60.14",
+      "sev": 1,
+      "time": "2026-04-27 22:59:56"
+    },
+    {
+      "name": "unnamed.jpg",
+      "label": "Medium Risk",
+      "conf": "60.14",
+      "sev": 1,
+      "time": "2026-04-27 23:00:02"
+    },
+    {
+      "name": "unnamed.jpg",
+      "label": "Medium Risk",
+      "conf": "60.14",
+      "sev": 1,
+      "time": "2026-04-27 23:00:08"
+    },
+    {
+      "name": "person100_bacteria_475.jpeg",
+      "label": "Medium Risk",
+      "conf": "100.00",
+      "sev": 1,
+      "time": "2026-04-27 23:08:15"
+    },
+    {
+      "name": "Y108.jpg",
+      "label": "High Risk",
+      "conf": "100.00",
+      "sev": 2,
+      "time": "2026-04-27 23:15:50"
+    },
+    {
+      "name": "Y108.jpg",
+      "label": "High Risk",
+      "conf": 100.0,
+      "sev": 2,
+      "time": "23:16:46"
+    },
+    {
+      "name": "butterly glioma.jpg",
+      "label": "High Risk",
+      "conf": 100.0,
+      "sev": 2,
+      "time": "23:16:48"
+    },
+    {
+      "name": "Y108.jpg",
+      "label": "High Risk",
+      "conf": 100.0,
+      "sev": 2,
+      "time": "23:17:22"
+    },
+    {
+      "name": "butterly glioma.jpg",
+      "label": "High Risk",
+      "conf": 100.0,
+      "sev": 2,
+      "time": "23:17:24"
+    },
+    {
+      "name": "Y108.jpg",
+      "label": "High Risk",
+      "conf": 100.0,
+      "sev": 2,
+      "time": "23:17:43"
+    },
+    {
+      "name": "butterly glioma.jpg",
+      "label": "High Risk",
+      "conf": 100.0,
+      "sev": 2,
+      "time": "23:17:44"
+    },
+    {
+      "name": "37 no.jpg",
+      "label": "High Risk",
+      "conf": "100.00",
+      "sev": 2,
+      "time": "2026-04-27 23:19:29"
+    },
+    {
+      "name": "37 no.jpg",
+      "label": "High Risk",
+      "conf": "100.00",
+      "sev": 2,
+      "time": "2026-04-27 23:19:48"
+    },
+    {
+      "name": "37 no.jpg",
+      "label": "High Risk",
+      "conf": "100.00",
+      "sev": 2,
+      "time": "2026-04-27 23:20:08"
+    },
+    {
+      "name": "33 no.jpg",
+      "label": "High Risk",
+      "conf": "100.00",
+      "sev": 2,
+      "time": "2026-04-27 23:20:54"
+    },
+    {
+      "name": "ISIC_0024332.jpg",
+      "label": "Medium Risk",
+      "conf": "100.00",
+      "sev": 1,
+      "time": "2026-04-27 23:23:14"
+    },
+    {
+      "name": "ISIC_0024332.jpg",
+      "label": "Medium Risk",
+      "conf": "100.00",
+      "sev": 1,
+      "time": "2026-04-27 23:23:49"
+    },
+    {
+      "name": "22 no.jpg",
+      "label": "High Risk",
+      "conf": "100.00",
+      "sev": 2,
+      "time": "2026-04-27 23:23:55"
+    },
+    {
+      "name": "15 no.jpg",
+      "label": "High Risk",
+      "conf": "100.00",
+      "sev": 2,
+      "time": "2026-04-27 23:24:44"
+    },
+    {
+      "name": "Y108.jpg",
+      "label": "High Risk",
+      "conf": "100.00",
+      "sev": 2,
+      "time": "2026-04-28 09:21:46"
+    },
+    {
+      "name": "Y104.jpg",
+      "label": "High Risk",
+      "conf": "100.00",
+      "sev": 2,
+      "time": "2026-04-28 22:23:20"
+    },
+    {
+      "name": "Y104.jpg",
+      "label": "High Risk",
+      "conf": "100.00",
+      "sev": 2,
+      "time": "2026-04-28 22:24:04"
+    },
+    {
+      "name": "Y104.jpg",
+      "label": "High Risk",
+      "conf": "100.00",
+      "sev": 2,
+      "time": "2026-04-28 22:24:44"
+    },
+    {
+      "name": "butterly glioma.jpg",
+      "label": "High Risk",
+      "conf": 100.0,
+      "sev": 2,
+      "time": "22:25:39"
+    },
+    {
+      "name": "41598_2023_41576_Fig1_HTML.jpg",
+      "label": "High Risk",
+      "conf": 100.0,
+      "sev": 2,
+      "time": "22:25:46"
+    },
+    {
+      "name": "Y106.jpg",
+      "label": "High Risk",
+      "conf": "100.00",
+      "sev": 2,
+      "time": "2026-04-28 22:48:26"
+    },
+    {
+      "name": "Y106.jpg",
+      "label": "High Risk",
+      "conf": "100.00",
+      "sev": 2,
+      "time": "2026-04-28 22:48:59"
+    },
+    {
+      "name": "Y106.jpg",
+      "label": "High Risk",
+      "conf": "100.00",
+      "sev": 2,
+      "time": "2026-04-28 22:49:20"
+    },
+    {
+      "name": "person109_bacteria_526.jpeg",
+      "label": "Medium Risk",
+      "conf": 100.0,
+      "sev": 1,
+      "time": "22:49:58"
+    },
+    {
+      "name": "person104_bacteria_492.jpeg",
+      "label": "Medium Risk",
+      "conf": 100.0,
+      "sev": 1,
+      "time": "22:49:59"
+    },
+    {
+      "name": "person109_bacteria_517.jpeg",
+      "label": "Medium Risk",
+      "conf": 100.0,
+      "sev": 1,
+      "time": "22:50:01"
+    },
+    {
+      "name": "person100_bacteria_475.jpeg",
+      "label": "Medium Risk",
+      "conf": 100.0,
+      "sev": 1,
+      "time": "22:50:02"
+    },
+    {
+      "name": "person109_bacteria_526.jpeg",
+      "label": "Medium Risk",
+      "conf": 100.0,
+      "sev": 1,
+      "time": "22:50:33"
+    },
+    {
+      "name": "person104_bacteria_492.jpeg",
+      "label": "Medium Risk",
+      "conf": 100.0,
+      "sev": 1,
+      "time": "22:50:35"
+    },
+    {
+      "name": "person109_bacteria_517.jpeg",
+      "label": "Medium Risk",
+      "conf": 100.0,
+      "sev": 1,
+      "time": "22:50:36"
+    },
+    {
+      "name": "person100_bacteria_475.jpeg",
+      "label": "Medium Risk",
+      "conf": 100.0,
+      "sev": 1,
+      "time": "22:50:38"
+    },
+    {
+      "name": "Y108.jpg",
+      "label": "High Risk",
+      "conf": "100.00",
+      "sev": 2,
+      "time": "2026-04-29 11:18:26"
+    },
+    {
+      "name": "Y108.jpg",
+      "label": "High Risk",
+      "conf": "100.00",
+      "sev": 2,
+      "time": "2026-04-29 11:18:48"
+    },
+    {
+      "name": "Y108.jpg",
+      "label": "High Risk",
+      "conf": "100.00",
+      "sev": 2,
+      "time": "2026-04-29 11:19:48"
+    }
+  ],
+  "last_scan_result": {
+    "name": "Gemini_Generated_Image_tiw199tiw199tiw1.png",
+    "label": "Normal",
+    "conf": "100.00",
+    "sev": 0,
+    "time": "2026-04-30 17:30:10"
+  }
+}

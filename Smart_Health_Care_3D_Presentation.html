@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Smart Health Care | Pro AI — 3D Presentation</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;600&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --neon: #00C8D2;
+  --neon-dim: rgba(0,200,210,0.3);
+  --dark: #020617;
+  --glass: rgba(15,23,42,0.85);
+}
+
+body {
+  background: var(--dark);
+  color: #E2E8F0;
+  font-family: 'Inter', sans-serif;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+
+#three-canvas {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  z-index: 0;
+}
+
+.slide-system {
+  position: relative;
+  z-index: 10;
+  width: 100vw;
+  height: 100vh;
+  perspective: 1200px;
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 80px;
+  opacity: 0;
+  pointer-events: none;
+  transform-style: preserve-3d;
+  transition: all 1s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.slide.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+/* Slide entrance animations */
+.slide.enter-left { transform: translateX(-100vw) rotateY(45deg) scale(0.8); }
+.slide.enter-right { transform: translateX(100vw) rotateY(-45deg) scale(0.8); }
+.slide.enter-bottom { transform: translateY(100vh) rotateX(-35deg) scale(0.8); }
+.slide.enter-top { transform: translateY(-100vh) rotateX(35deg) scale(0.8); }
+
+.slide.active.enter-left,
+.slide.active.enter-right,
+.slide.active.enter-bottom,
+.slide.active.enter-top {
+  transform: translateX(0) translateY(0) rotateY(0) rotateX(0) scale(1);
+}
+
+.slide.exit-left { transform: translateX(-100vw) rotateY(-45deg) scale(0.8); opacity: 0; }
+.slide.exit-right { transform: translateX(100vw) rotateY(45deg) scale(0.8); opacity: 0; }
+.slide.exit-bottom { transform: translateY(100vh) rotateX(35deg) scale(0.8); opacity: 0; }
+.slide.exit-top { transform: translateY(-100vh) rotateX(-35deg) scale(0.8); opacity: 0; }
+
+/* Glass card */
+.glass-panel {
+  background: var(--glass);
+  backdrop-filter: blur(20px);
+  border: 1px solid var(--neon-dim);
+  border-radius: 24px;
+  padding: 50px 60px;
+  box-shadow: 0 0 40px rgba(0,200,210,0.15), inset 0 0 20px rgba(0,200,210,0.05);
+  max-width: 1100px;
+  width: 100%;
+  transform-style: preserve-3d;
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-12px); }
+}
+
+/* Typography */
+h1 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 4rem;
+  color: var(--neon);
+  text-shadow: 0 0 20px rgba(0,200,210,0.5), 0 0 40px rgba(0,200,210,0.2);
+  letter-spacing: 4px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+h2 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2.4rem;
+  color: var(--neon);
+  text-shadow: 0 0 15px rgba(0,200,210,0.4);
+  margin-bottom: 30px;
+  letter-spacing: 3px;
+  border-bottom: 2px solid var(--neon-dim);
+  padding-bottom: 15px;
+}
+
+h3 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.3rem;
+  color: var(--neon);
+  margin-bottom: 12px;
+  letter-spacing: 2px;
+}
+
+p, li {
+  font-size: 1.15rem;
+  line-height: 1.7;
+  color: #CBD5E1;
+}
+
+.subtitle {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.2rem;
+  color: #94A3B8;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.member-card {
+  display: inline-block;
+  background: rgba(0,200,210,0.1);
+  border: 1px solid var(--neon-dim);
+  border-radius: 16px;
+  padding: 20px 35px;
+  margin: 10px;
+  font-family: 'Orbitron', sans-serif;
+  color: var(--neon);
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+  box-shadow: 0 0 20px rgba(0,200,210,0.1);
+  animation: pulse-glow 3s infinite;
+}
+
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 20px rgba(0,200,210,0.1); }
+  50% { box-shadow: 0 0 35px rgba(0,200,210,0.3); }
+}
+
+.two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  width: 100%;
+}
+
+.three-col {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  width: 100%;
+}
+
+.feature-box {
+  background: rgba(0,0,0,0.4);
+  border: 1px solid var(--neon-dim);
+  border-radius: 16px;
+  padding: 25px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.feature-box:hover {
+  transform: translateZ(30px) scale(1.05);
+  box-shadow: 0 0 30px rgba(0,200,210,0.2);
+}
+
+.feature-icon {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  display: block;
+}
+
+ul.custom-list {
+  list-style: none;
+  padding: 0;
+}
+
+ul.custom-list li {
+  padding-left: 30px;
+  position: relative;
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+}
+
+ul.custom-list li::before {
+  content: '▹';
+  position: absolute;
+  left: 0;
+  color: var(--neon);
+  font-size: 1.3rem;
+}
+
+.result-metric {
+  text-align: center;
+  padding: 30px;
+  background: rgba(0,200,210,0.08);
+  border-radius: 20px;
+  border: 1px solid var(--neon-dim);
+}
+
+.result-metric .number {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 3rem;
+  color: var(--neon);
+  text-shadow: 0 0 20px rgba(0,200,210,0.4);
+}
+
+.result-metric .label {
+  font-size: 0.95rem;
+  color: #94A3B8;
+  margin-top: 8px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Progress bar */
+.progress-container {
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: rgba(15,23,42,0.9);
+  padding: 12px 30px;
+  border-radius: 30px;
+  border: 1px solid var(--neon-dim);
+  backdrop-filter: blur(10px);
+}
+
+.progress-bar {
+  width: 200px;
+  height: 4px;
+  background: rgba(0,200,210,0.2);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: var(--neon);
+  box-shadow: 0 0 10px var(--neon);
+  transition: width 0.6s ease;
+}
+
+.nav-btn {
+  background: none;
+  border: 1px solid var(--neon);
+  color: var(--neon);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1rem;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-btn:hover {
+  background: var(--neon);
+  color: var(--dark);
+  box-shadow: 0 0 20px var(--neon);
+}
+
+.slide-counter {
+  font-family: 'Orbitron', sans-serif;
+  color: var(--neon);
+  font-size: 0.9rem;
+  min-width: 50px;
+  text-align: center;
+}
+
+/* Demo grid */
+.demo-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  width: 100%;
+}
+
+.demo-card {
+  background: rgba(0,0,0,0.5);
+  border: 1px solid var(--neon-dim);
+  border-radius: 16px;
+  padding: 20px;
+  text-align: center;
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.demo-card::before {
+  content: '';
+  position: absolute;
+  top: -50%; left: -50%;
+  width: 200%; height: 200%;
+  background: linear-gradient(45deg, transparent, rgba(0,200,210,0.1), transparent);
+  transform: rotate(45deg);
+  animation: shimmer 3s infinite;
+}
+
+@keyframes shimmer {
+  0% { transform: translateX(-100%) rotate(45deg); }
+  100% { transform: translateX(100%) rotate(45deg); }
+}
+
+.demo-placeholder {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  h1 { font-size: 2.5rem; }
+  h2 { font-size: 1.8rem; }
+  .two-col, .three-col, .demo-grid { grid-template-columns: 1fr; }
+  .slide { padding: 30px; }
+}
+</style>
+</head>
+<body>
+
+<!-- Three.js Background Canvas -->
+<canvas id="three-canvas"></canvas>
+
+<!-- Slide System -->
+<div class="slide-system" id="slideSystem">
+
+  <!-- SLIDE 1: Title -->
+  <div class="slide active enter-left" data-index="0">
+    <div class="glass-panel" style="text-align: center; max-width: 900px;">
+      <div class="subtitle">Semester Project Presentation</div>
+      <h1>SMART HEALTH CARE</h1>
+      <div style="font-family: 'Orbitron'; font-size: 1.5rem; color: #00C8D2; letter-spacing: 8px; margin-bottom: 50px;">PRO AI DIAGNOSTICS</div>
+
+      <div style="margin-top: 20px;">
+        <div class="member-card">👤 Nimra Dil</div>
+        <div class="member-card">👤 Chashman Aslam</div>
+      </div>
+
+      <p style="margin-top: 40px; color: #64748B; font-size: 0.95rem; letter-spacing: 2px;">
+        DEPARTMENT OF COMPUTER SCIENCE · 2026
+      </p>
+    </div>
+  </div>
+
+  <!-- SLIDE 2: Objective & Industry -->
+  <div class="slide enter-bottom" data-index="1">
+    <div class="glass-panel">
+      <h2>🎯 Objective & Industry</h2>
+      <div class="two-col">
+        <div>
+          <h3>Project Objective</h3>
+          <ul class="custom-list">
+            <li>Build an AI-powered clinical command center for automated medical image diagnosis and triage.</li>
+            <li>Enable real-time lesion detection, classification, and measurement using deep neural networks.</li>
+            <li>Integrate contactless vital monitoring (rPPG) and AI clinical report generation.</li>
+            <li>Ensure HIPAA-compliant data handling with automated OCR-based anonymization.</li>
+            <li>Reduce diagnostic latency and assist clinicians with intelligent batch triage queues.</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Industry Domain</h3>
+          <div class="feature-box" style="margin-bottom: 20px;">
+            <span class="feature-icon">🏥</span>
+            <h3>Healthcare Technology</h3>
+            <p>AI-driven diagnostic platforms transforming radiology, dermatology, and pulmonology workflows.</p>
+          </div>
+          <div class="feature-box">
+            <span class="feature-icon">🤖</span>
+            <h3>Med-Tech / AI</h3>
+            <p>Intersection of computer vision, LLMs, and biomedical signal processing for next-gen patient care.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SLIDE 3: Methodology -->
+  <div class="slide enter-right" data-index="2">
+    <div class="glass-panel">
+      <h2>⚙️ Methodology & Working</h2>
+      <div class="three-col">
+        <div class="feature-box">
+          <span class="feature-icon">🧠</span>
+          <h3>Deep Learning Core</h3>
+          <p>EfficientNetV2 architecture trained for 3-class classification: Normal, Medium Risk, and High Risk.</p>
+        </div>
+        <div class="feature-box">
+          <span class="feature-icon">🔥</span>
+          <h3>Grad-CAM Visualization</h3>
+          <p>Layered neural attention maps at Early, Middle, Mid-Deep, and Deep layers for clinical explainability.</p>
+        </div>
+        <div class="feature-box">
+          <span class="feature-icon">📄</span>
+          <h3>AI Report Generation</h3>
+          <p>OpenRouter API integration with Gemini & Llama models for structured clinical PDF reports.</p>
+        </div>
+        <div class="feature-box">
+          <span class="feature-icon">❤️</span>
+          <h3>Contactless Vitals</h3>
+          <p>rPPG signal extraction from facial videos using FFT bandpass filtering for heart & respiration rate.</p>
+        </div>
+        <div class="feature-box">
+          <span class="feature-icon">🛡️</span>
+          <h3>HIPAA Shield</h3>
+          <p>EasyOCR-based automatic text redaction to anonymize patient data before processing.</p>
+        </div>
+        <div class="feature-box">
+          <span class="feature-icon">🚑</span>
+          <h3>Batch Triage</h3>
+          <p>Multi-image upload with severity sorting, emergency queue management, and comparative analytics.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SLIDE 4: Demo / Screenshots -->
+  <div class="slide enter-left" data-index="3">
+    <div class="glass-panel">
+      <h2>🖥️ System Demo</h2>
+      <div class="demo-grid">
+        <div class="demo-card">
+          <div class="demo-placeholder">📊</div>
+          <h3>Live Dashboard</h3>
+          <p>Real-time analytics, emergency queue, and scan history monitoring.</p>
+        </div>
+        <div class="demo-card">
+          <div class="demo-placeholder">🔍</div>
+          <h3>Single Diagnostic</h3>
+          <p>Upload scan → AI classification → Heatmap → Lesion measurement.</p>
+        </div>
+        <div class="demo-card">
+          <div class="demo-placeholder">🫀</div>
+          <h3>Vitals (rPPG)</h3>
+          <p>Contactless heart rate & respiration from facial video analysis.</p>
+        </div>
+        <div class="demo-card">
+          <div class="demo-placeholder">🤖</div>
+          <h3>Clinical AI Agent</h3>
+          <p>Conversational medical assistant with image-aware reasoning.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SLIDE 5: Results -->
+  <div class="slide enter-bottom" data-index="4">
+    <div class="glass-panel">
+      <h2>📈 Results & Performance</h2>
+      <div class="three-col" style="margin-bottom: 40px;">
+        <div class="result-metric">
+          <div class="number">3</div>
+          <div class="label">Risk Classes</div>
+        </div>
+        <div class="result-metric">
+          <div class="number">&lt;2s</div>
+          <div class="label">Inference Time</div>
+        </div>
+        <div class="result-metric">
+          <div class="number">4</div>
+          <div class="label">Neural Depths</div>
+        </div>
+      </div>
+      <div class="two-col">
+        <div>
+          <h3>Diagnostic Accuracy</h3>
+          <ul class="custom-list">
+            <li>High-precision classification across Normal, Medium, and High Risk categories.</li>
+            <li>Automated lesion area & diameter measurement in millimeters.</li>
+            <li>3D spectral surface plots and volumetric density comparisons.</li>
+          </ul>
+        </div>
+        <div>
+          <h3>System Outputs</h3>
+          <ul class="custom-list">
+            <li>AI-generated clinical PDF reports with watermark and page borders.</li>
+            <li>Real-time global emergency queue with severity-based sorting.</li>
+            <li>Persistent JSON storage for scan history and audit trails.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SLIDE 6: Conclusion -->
+  <div class="slide enter-right" data-index="5">
+    <div class="glass-panel" style="text-align: center; max-width: 900px;">
+      <h2>🔮 Conclusion & Future Scope</h2>
+      <p style="font-size: 1.2rem; margin-bottom: 40px; max-width: 800px; margin-left: auto; margin-right: auto;">
+        Smart Health Care Pro AI demonstrates a production-ready clinical intelligence pipeline 
+        combining computer vision, generative AI, and biomedical signal processing into a unified 
+        diagnostic platform.
+      </p>
+      <div class="three-col" style="max-width: 800px; margin: 0 auto 40px;">
+        <div class="feature-box">
+          <span class="feature-icon">🌐</span>
+          <h3>Cloud Deploy</h3>
+          <p>Scalable Kubernetes deployment for multi-hospital networks.</p>
+        </div>
+        <div class="feature-box">
+          <span class="feature-icon">📱</span>
+          <h3>Mobile App</h3>
+          <p>Flutter-based companion for bedside instant diagnostics.</p>
+        </div>
+        <div class="feature-box">
+          <span class="feature-icon">🔗</span>
+          <h3>EHR Integration</h3>
+          <p>Direct HL7/FHIR connectivity to hospital record systems.</p>
+        </div>
+      </div>
+      <div style="margin-top: 30px; padding-top: 30px; border-top: 1px solid var(--neon-dim);">
+        <p style="font-family: 'Orbitron'; color: var(--neon); font-size: 1.1rem; letter-spacing: 3px;">
+          THANK YOU
+        </p>
+        <p style="color: #64748B; margin-top: 10px; font-size: 0.9rem;">
+          Nimra Dil &nbsp;·&nbsp; Chashman Aslam
+        </p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- Navigation Controls -->
+<div class="progress-container">
+  <button class="nav-btn" onclick="prevSlide()">◀</button>
+  <div class="slide-counter"><span id="current">1</span> / <span id="total">6</span></div>
+  <div class="progress-bar"><div class="progress-fill" id="progressFill" style="width: 16.6%"></div></div>
+  <button class="nav-btn" onclick="nextSlide()">▶</button>
+</div>
+
+<!-- Three.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+// ===================== SLIDE SYSTEM =====================
+let currentSlide = 0;
+const slides = document.querySelectorAll('.slide');
+const totalSlides = slides.length;
+const directions = ['enter-left', 'enter-right', 'enter-bottom', 'enter-top', 'enter-left', 'enter-right'];
+const exits = ['exit-right', 'exit-left', 'exit-top', 'exit-bottom', 'exit-right', 'exit-left'];
+
+document.getElementById('total').textContent = totalSlides;
+
+function updateSlides() {
+  slides.forEach((slide, i) => {
+    slide.classList.remove('active', 'enter-left', 'enter-right', 'enter-bottom', 'enter-top', 'exit-left', 'exit-right', 'exit-top', 'exit-bottom');
+    if (i === currentSlide) {
+      slide.classList.add('active', directions[i]);
+    } else if (i < currentSlide) {
+      slide.classList.add(exits[i]);
+    } else {
+      slide.classList.add(directions[i]);
+    }
+  });
+  document.getElementById('current').textContent = currentSlide + 1;
+  document.getElementById('progressFill').style.width = ((currentSlide + 1) / totalSlides * 100) + '%';
+}
+
+function nextSlide() {
+  if (currentSlide < totalSlides - 1) { currentSlide++; updateSlides(); }
+}
+function prevSlide() {
+  if (currentSlide > 0) { currentSlide--; updateSlides(); }
+}
+
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'ArrowRight' || e.key === ' ') nextSlide();
+  if (e.key === 'ArrowLeft') prevSlide();
+  if (e.key === 'f') document.documentElement.requestFullscreen();
+});
+
+// ===================== THREE.JS 3D SCENE =====================
+const canvas = document.getElementById('three-canvas');
+const scene = new THREE.Scene();
+scene.fog = new THREE.FogExp2(0x020617, 0.035);
+
+const camera = new THREE.PerspectiveCamera(55, window.innerWidth/window.innerHeight, 0.1, 1000);
+camera.position.set(0, 0, 10);
+
+const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true });
+renderer.setSize(window.innerWidth, window.innerHeight);
+renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+
+// Lights
+scene.add(new THREE.AmbientLight(0x00C8D2, 0.3));
+const p1 = new THREE.PointLight(0x00C8D2, 1.0, 60); p1.position.set(5, 5, 5); scene.add(p1);
+const p2 = new THREE.PointLight(0x66E5FF, 0.5, 60); p2.position.set(-5, -3, 5); scene.add(p2);
+
+// DNA Helix
+const helixGroup = new THREE.Group();
+const count = 350;
+const s1Pos = new Float32Array(count * 3);
+const s2Pos = new Float32Array(count * 3);
+const s1Col = new Float32Array(count * 3);
+const s2Col = new Float32Array(count * 3);
+
+for (let i = 0; i < count; i++) {
+  const t = (i / count) * Math.PI * 8;
+  const y = (i / count) * 14 - 7;
+  const r = 2.2;
+  s1Pos[i*3] = Math.cos(t) * r; s1Pos[i*3+1] = y; s1Pos[i*3+2] = Math.sin(t) * r;
+  s2Pos[i*3] = Math.cos(t + Math.PI) * r; s2Pos[i*3+1] = y; s2Pos[i*3+2] = Math.sin(t + Math.PI) * r;
+  const b1 = 0.7 + Math.random() * 0.3;
+  s1Col[i*3] = 0; s1Col[i*3+1] = 0.78*b1; s1Col[i*3+2] = 0.82*b1;
+  const b2 = 0.6 + Math.random() * 0.4;
+  s2Col[i*3] = 0.1*b2; s2Col[i*3+1] = 0.85*b2; s2Col[i*3+2] = 1.0*b2;
+}
+
+const geo1 = new THREE.BufferGeometry();
+geo1.setAttribute('position', new THREE.BufferAttribute(s1Pos, 3));
+geo1.setAttribute('color', new THREE.BufferAttribute(s1Col, 3));
+const geo2 = new THREE.BufferGeometry();
+geo2.setAttribute('position', new THREE.BufferAttribute(s2Pos, 3));
+geo2.setAttribute('color', new THREE.BufferAttribute(s2Col, 3));
+
+const pMat = new THREE.PointsMaterial({ size: 0.08, vertexColors: true, transparent: true, opacity: 0.8, blending: THREE.AdditiveBlending, depthWrite: false });
+helixGroup.add(new THREE.Points(geo1, pMat));
+helixGroup.add(new THREE.Points(geo2, pMat.clone()));
+
+// Rungs
+const lineGeo = new THREE.BufferGeometry();
+const lp = [];
+for (let i = 0; i < count; i += 2) {
+  lp.push(s1Pos[i*3], s1Pos[i*3+1], s1Pos[i*3+2]);
+  lp.push(s2Pos[i*3], s2Pos[i*3+1], s2Pos[i*3+2]);
+}
+lineGeo.setAttribute('position', new THREE.Float32BufferAttribute(lp, 3));
+helixGroup.add(new THREE.LineSegments(lineGeo, new THREE.LineBasicMaterial({ color: 0x00C8D2, transparent: true, opacity: 0.1, blending: THREE.AdditiveBlending })));
+scene.add(helixGroup);
+
+// Floating crosses
+const crossGroup = new THREE.Group();
+const crossMat = new THREE.MeshBasicMaterial({ color: 0x00C8D2, transparent: true, opacity: 0.15, side: THREE.DoubleSide, blending: THREE.AdditiveBlending, depthWrite: false });
+for (let i = 0; i < 35; i++) {
+  const cg = new THREE.Group();
+  cg.add(new THREE.Mesh(new THREE.BoxGeometry(0.05, 0.35, 0.05), crossMat));
+  cg.add(new THREE.Mesh(new THREE.BoxGeometry(0.35, 0.05, 0.05), crossMat));
+  cg.position.set((Math.random()-0.5)*18, (Math.random()-0.5)*18, (Math.random()-0.5)*12 - 3);
+  cg.rotation.set(Math.random()*Math.PI, Math.random()*Math.PI, Math.random()*Math.PI);
+  cg.userData = { rs: {x:(Math.random()-0.5)*0.012, y:(Math.random()-0.5)*0.012, z:(Math.random()-0.5)*0.012}, fs: 0.004+Math.random()*0.008, fo: Math.random()*Math.PI*2, oy: cg.position.y };
+  crossGroup.add(cg);
+}
+scene.add(crossGroup);
+
+// Core
+const core = new THREE.Mesh(
+  new THREE.IcosahedronGeometry(0.35, 3),
+  new THREE.MeshPhongMaterial({ color: 0x00C8D2, emissive: 0x003333, emissiveIntensity: 0.5, transparent: true, opacity: 0.7, shininess: 100, blending: THREE.AdditiveBlending })
+);
+scene.add(core);
+
+// Rings
+const ringMat = new THREE.MeshBasicMaterial({ color: 0x00C8D2, transparent: true, opacity: 0.2, blending: THREE.AdditiveBlending, side: THREE.DoubleSide });
+const r1 = new THREE.Mesh(new THREE.TorusGeometry(0.9, 0.015, 16, 100), ringMat);
+const r2 = new THREE.Mesh(new THREE.TorusGeometry(0.9, 0.015, 16, 100), ringMat.clone());
+const r3 = new THREE.Mesh(new THREE.TorusGeometry(0.9, 0.015, 16, 100), ringMat.clone());
+r2.rotation.x = Math.PI/2.5; r3.rotation.y = Math.PI/2.5;
+scene.add(r1); scene.add(r2); scene.add(r3);
+
+// Mouse
+let mx = 0, my = 0, tmx = 0, tmy = 0;
+document.addEventListener('mousemove', e => { tmx = (e.clientX/window.innerWidth)*2-1; tmy = (e.clientY/window.innerHeight)*2-1; });
+
+function animate() {
+  requestAnimationFrame(animate);
+  const time = Date.now() * 0.001;
+  mx += (tmx - mx) * 0.05; my += (tmy - my) * 0.05;
+
+  helixGroup.rotation.y += 0.002;
+  helixGroup.rotation.x = Math.sin(time*0.4)*0.06;
+  helixGroup.position.y = Math.sin(time*0.5)*0.15;
+
+  crossGroup.children.forEach(c => {
+    c.rotation.x += c.userData.rs.x; c.rotation.y += c.userData.rs.y; c.rotation.z += c.userData.rs.z;
+    c.position.y = c.userData.oy + Math.sin(time*0.8 + c.userData.fo)*0.35;
+  });
+  crossGroup.rotation.y -= 0.0006;
+
+  const pulse = 1 + Math.sin(time*1.8)*0.1;
+  core.scale.set(pulse, pulse, pulse);
+  core.rotation.y += 0.006;
+
+  r1.rotation.x += 0.003; r1.rotation.y += 0.002;
+  r2.rotation.x += 0.002; r2.rotation.z += 0.003;
+  r3.rotation.y += 0.004; r3.rotation.z += 0.002;
+
+  camera.position.x += (mx*0.6 - camera.position.x)*0.03;
+  camera.position.y += (-my*0.4 - camera.position.y)*0.03;
+  camera.lookAt(0,0,0);
+
+  renderer.render(scene, camera);
+}
+animate();
+
+window.addEventListener('resize', () => {
+  camera.aspect = window.innerWidth/window.innerHeight;
+  camera.updateProjectionMatrix();
+  renderer.setSize(window.innerWidth, window.innerHeight);
+});
+</script>
+</body>
+</html>
