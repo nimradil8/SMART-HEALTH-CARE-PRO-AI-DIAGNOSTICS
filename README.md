@@ -6,7 +6,7 @@ An AI-powered clinical diagnostics platform combining computer vision, generativ
 
 👩‍💻 Developers
 
-Nimra Dil
+Nimra Dil&
 Chashman Aslam
 
 
